@@ -1,0 +1,70 @@
+:root {
+  --bg-color: #ffffff;
+  --red: #D94443;
+  --bottom-svg-height: 160;
+  --bottom-svg-width: 1920;
+  --bottom-svg-ratio: calc(100% * var(--bottom-svg-height) / var(--bottom-svg-width));
+}
+
+@font-face {
+  font-family: 'sarbaz';
+  src: url('../fonts/Sarbaz.woff2') format('woff2');
+}
+
+.inbody {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+
+.main-header {
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+}
+
+.navbar {
+  font-family: 'sarbaz';
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #898270;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 110px;
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+  }
+
+  .inbody {
+    height: 55px;
+  }
+
+}
+
+.banner {
+  color: var(--red);
+  background-color: var(--bg-color);
+  height: 60vh;
+}
+
+.bottom-svg {
+  fill: var(--red);
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  height: auto;
+}
+
+#about {
+  background-color: var(--red);
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+}
+
+.box {
+  border: 2px solid #f9b85e;
+  border-radius: 30px;
+}
