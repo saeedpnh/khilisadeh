@@ -11,6 +11,16 @@
   src: url('../fonts/Sarbaz.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'aviny';
+  src: url('../fonts/aviny.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'sanslight';
+  src: url(../fonts/IRANSansLight.woff) format('woff');
+}
+
 .inbody {
   background-color: #ffffff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -34,6 +44,7 @@
 
 .navbar {
   font-family: 'sarbaz';
+
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -52,10 +63,27 @@
 
 }
 
-.banner {
+.banner-image {
+  height: 350px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.title-aviny-red {
+  font-family: aviny;
   color: var(--red);
-  background-color: var(--bg-color);
-  height: 60vh;
+}
+
+.title-aviny-white {
+  font-family: aviny;
+  color: #ffffff;
+}
+
+.banner p {
+  font-family: sanslight;
+  color: #898270;
+  line-height: 2;
+  direction: rtl;
 }
 
 .bottom-svg {
@@ -72,9 +100,33 @@
   background-color: var(--red);
   position: relative;
   padding-bottom: var(--bottom-svg-ratio);
+  height: 90vh;
 }
 
+#about p {
+  font-family: sanslight;
+  color: #ffffff;
+  line-height: 2;
+  direction: rtl;
+
+}
+
+#latest-post {
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+}
+#latest-post p{
+  font-family: sanslight;
+  color: #898270;
+  line-height: 2;
+  direction: rtl;
+}
 .box {
-  border: 2px solid #f9b85e;
-  border-radius: 30px;
+  /* border: 2px solid #95C623; */
+  box-shadow: 0 0 5px 1px rgba(149,198,35,1);
+  border-radius: 10px;
+}
+
+#main-footer {
+  background-color: var(--red);
 }
