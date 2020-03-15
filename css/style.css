@@ -159,8 +159,6 @@
 
 /***** latest-post *****/
 #latest-post {
-  position: relative;
-  padding-bottom: var(--bottom-svg-ratio);
   background: url(../img/s3.png) no-repeat top right;
   background-size: 350px 600px;
 }
@@ -178,6 +176,16 @@
 }
 
 /***** latest-post end *****/
+
+
+/***** Testimonial *****/
+#testimonial {
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+  margin-top:200px;
+  /* background-color: #898270; */
+}
+
 
 
 /***** footer  *****/
