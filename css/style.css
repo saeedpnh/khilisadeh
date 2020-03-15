@@ -37,6 +37,31 @@
   }
 }
 
+/***** General  ******/
+.title-aviny-red {
+  font-family: aviny;
+  color: var(--red);
+}
+
+.title-aviny-white {
+  font-family: aviny;
+  color: #ffffff;
+}
+
+.bottom-svg {
+  fill: var(--red);
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  height: auto;
+}
+
+/***** General end ******/
+
+
+/***** main-header *****/
 .main-header {
   position: relative;
   padding-bottom: var(--bottom-svg-ratio);
@@ -63,20 +88,14 @@
 
 }
 
+/***** main-header end *****/
+
+
+/***** banner *****/
 .banner-image {
   height: 350px;
   width: 100%;
   object-fit: contain;
-}
-
-.title-aviny-red {
-  font-family: aviny;
-  color: var(--red);
-}
-
-.title-aviny-white {
-  font-family: aviny;
-  color: #ffffff;
 }
 
 .banner p {
@@ -86,16 +105,10 @@
   direction: rtl;
 }
 
-.bottom-svg {
-  fill: var(--red);
-  width: 100%;
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: -1px;
-  height: auto;
-}
+/***** banner end *****/
 
+
+/***** About *****/
 #about {
   background-color: var(--red);
   position: relative;
@@ -111,22 +124,63 @@
 
 }
 
+/***** About end *****/
+
+
+/****** skills  ******/
+#skills {
+  background: url(../img/s2.png) no-repeat top left;
+  background-size: 350px 600px;
+}
+
+#skills .category-box {
+  box-shadow: 0px 10px 30px rgba(55, 43, 125, .1);
+  border-radius: 25px;
+  padding: 15px;
+  margin: 5px;
+}
+
+#skills .category-box a {
+  text-decoration: none;
+  color: #898270;
+}
+
+#skills .category-box:hover {
+  box-shadow: 0px 10px 30px rgba(252, 185, 178, 1);
+}
+
+#skills .category-box:hover img {
+  transition: all 0.1s ease-in;
+  filter: grayscale(100%);
+}
+
+/****** skills  end ******/
+
+
+/***** latest-post *****/
 #latest-post {
   position: relative;
   padding-bottom: var(--bottom-svg-ratio);
+  background: url(../img/s3.png) no-repeat top right;
+  background-size: 350px 600px;
 }
-#latest-post p{
+
+#latest-post p {
   font-family: sanslight;
   color: #898270;
   line-height: 2;
   direction: rtl;
 }
-.box {
-  /* border: 2px solid #95C623; */
-  box-shadow: 0 0 5px 1px rgba(149,198,35,1);
-  border-radius: 10px;
+
+#latest-post .box {
+  box-shadow: 0px 10px 30px rgba(55, 43, 125, .1);
+  border-radius: 25px;
 }
 
+/***** latest-post end *****/
+
+
+/***** footer  *****/
 #main-footer {
   background-color: var(--red);
 }
