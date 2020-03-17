@@ -129,8 +129,8 @@
 
 /****** skills  ******/
 #skills {
-  background: url(../img/s2.png) no-repeat top left;
-  background-size: 350px 600px;
+  background: url(../img/side1.svg) no-repeat top left;
+  background-size: contain;
 }
 
 #skills .category-box {
@@ -159,8 +159,8 @@
 
 /***** latest-post *****/
 #latest-post {
-  background: url(../img/s3.png) no-repeat top right;
-  background-size: 350px 600px;
+  background: url(../img/side2.svg) no-repeat top right;
+  background-size: contain;
 }
 
 #latest-post p {
@@ -182,8 +182,17 @@
 #testimonial {
   position: relative;
   padding-bottom: var(--bottom-svg-ratio);
-  margin-top:200px;
+  margin-top: 200px;
   /* background-color: #898270; */
+}
+
+#testimonial .img-frame {
+ background: url(../img/frame.svg) no-repeat center center;
+ background-size: contain;
+ width: 350px;
+ height: 350px;
+ position: relative;
+ top: 30px;
 }
 
 
