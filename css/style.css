@@ -79,6 +79,7 @@
 
 .navbar {
   font-family: "sarbaz";
+  background-color: #ffffff;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -87,7 +88,7 @@
 
 @media (min-width: 768px) {
   .navbar {
-    height: 110px;
+    /* height: 110px; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   }
 
@@ -129,12 +130,34 @@
   direction: rtl;
 }
 
+#about a {
+  text-decoration: none;
+}
+
+#about .btn-more{
+  color: #898270;
+  background-color: #FEE7DD;
+}
+
 /***** About end *****/
 
 /****** skills  ******/
 #skills {
   background: url(../img/side1.svg) no-repeat top left;
   background-size: contain;
+}
+
+@media (max-width: 992px) {
+  #skills {
+    background: url(../img/side1.svg) no-repeat top left;
+    background-size: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  #skills {
+    background: none;
+  }
 }
 
 #skills .category-box {
@@ -161,11 +184,6 @@
 /****** skills  end ******/
 
 /***** latest-post *****/
-#latest-post {
-  background: url(../img/side2.svg) no-repeat top right;
-  background-size: contain;
-}
-
 #latest-post p {
   font-family: sanslight;
   color: #898270;
@@ -175,7 +193,25 @@
 
 #latest-post .box {
   box-shadow: 0px 10px 30px rgba(55, 43, 125, 0.1);
+  background: url(../img/box.svg) no-repeat center center;
+  background-size: cover;
   border-radius: 25px;
+}
+
+#latest-post .box:hover {
+  box-shadow: 0px 10px 30px rgba(55, 43, 125, 0.2);
+  background: url(../img/box-hover.svg) no-repeat center center;
+  background-size: cover;
+}
+
+#latest-post .box:hover img {
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+}
+
+#latest-post .box a {
+  text-decoration: none;
 }
 
 /***** latest-post end *****/
@@ -185,16 +221,32 @@
   position: relative;
   padding-bottom: var(--bottom-svg-ratio);
   margin-top: 200px;
-  /* background-color: #898270; */
 }
 
-#testimonial .img-frame {
-  background: url(../img/frame.svg) no-repeat center center;
-  background-size: contain;
-  width: 350px;
-  height: 350px;
+#testimonial .img-container {
   position: relative;
-  top: 30px;
+  display: block;
+}
+
+#testimonial .img-container .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+#testimonial .img-container .main-photo {
+  position: relative;
+  transform: scale(0.8);
+  top: -1px;
+  left: -5px;
+}
+
+#testimonial blockquote p {
+  font-family: aviny;
+  font-size: 1.3em;
+  color: #898270;
 }
 
 /***** footer  *****/
