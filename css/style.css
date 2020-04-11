@@ -3,9 +3,7 @@
   --red: #d94443;
   --bottom-svg-height: 160;
   --bottom-svg-width: 1920;
-  --bottom-svg-ratio: calc(
-    100% * var(--bottom-svg-height) / var(--bottom-svg-width)
-  );
+  --bottom-svg-ratio: calc(100% * var(--bottom-svg-height) / var(--bottom-svg-width));
 }
 
 @font-face {
@@ -16,13 +14,20 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "aviny";
-  src: url("../fonts/aviny.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/aviny.eot");
+  /* IE9 Compat Modes */
   src: url("../fonts/aviny.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/aviny.otf") format("opentype"),
-    /* Open Type Font */ url("../fonts/aviny.svg") format("svg"),
-    /* Legacy iOS */ url("../fonts/aviny.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/aviny.woff") format("woff"),
-    /* Modern Browsers */ url("../fonts/aviny.woff2") format("woff2"); /* Modern Browsers */
+    /* IE6-IE8 */
+    url("../fonts/aviny.otf") format("opentype"),
+    /* Open Type Font */
+    url("../fonts/aviny.svg") format("svg"),
+    /* Legacy iOS */
+    url("../fonts/aviny.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/aviny.woff") format("woff"),
+    /* Modern Browsers */
+    url("../fonts/aviny.woff2") format("woff2");
+  /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -134,7 +139,7 @@
   text-decoration: none;
 }
 
-#about .btn-more{
+#about .btn-more {
   color: #898270;
   background-color: #FEE7DD;
 }
@@ -196,6 +201,11 @@
   background: url(../img/box.svg) no-repeat center center;
   background-size: cover;
   border-radius: 25px;
+  transition: all .3s ease-in-out;
+}
+
+#latest-post .box img{
+  transition: all .3s ease-in-out;
 }
 
 #latest-post .box:hover {
@@ -205,9 +215,9 @@
 }
 
 #latest-post .box:hover img {
-  transform: scale(1.01);
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
 }
 
 #latest-post .box a {
@@ -236,6 +246,7 @@
   width: 100%;
   height: 100%;
 }
+
 #testimonial .img-container .main-photo {
   position: relative;
   transform: scale(0.8);
