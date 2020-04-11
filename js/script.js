@@ -16,6 +16,11 @@ $(function () {
     })
   }
 
+  // hide collapse nav on click
+  $('.navbar-nav > li > a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  })
+
   // wow reveal when the user scrolls
   wow = new WOW({
     boxClass: 'wow', // default
@@ -41,5 +46,5 @@ $(function () {
       );
     e.preventDefault();
   });
-  
+
 })

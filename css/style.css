@@ -172,6 +172,26 @@
   margin: 5px;
 }
 
+#skills .category-box h3 {
+  font-family: sanslight;
+  font-size: 2em;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #skills .category-box h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  #skills .category-box h3 {
+    overflow-wrap: break-word;
+  }
+}
+
 #skills .category-box a {
   text-decoration: none;
   color: #898270;
@@ -204,7 +224,13 @@
   transition: all .3s ease-in-out;
 }
 
-#latest-post .box img{
+@media (max-width: 768px) {
+  #latest-post .box {
+    margin: 10px 0;
+  }
+}
+
+#latest-post .box img {
   transition: all .3s ease-in-out;
 }
 
