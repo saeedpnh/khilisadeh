@@ -1,0 +1,64 @@
+:root {
+  --bg-color: #ffffff;
+  --red: #d94443;
+  --bottom-svg-height: 160;
+  --bottom-svg-width: 1920;
+  --bottom-svg-ratio: calc(100% * var(--bottom-svg-height) / var(--bottom-svg-width));
+}
+
+.inbody {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/***** General  ******/
+.title-aviny-red {
+  font-family: aviny;
+  color: var(--red);
+}
+
+.title-aviny-white {
+  font-family: aviny;
+  color: #ffffff;
+}
+
+.bottom-svg {
+  fill: var(--red);
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  height: auto;
+}
+
+hr {
+  /* border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); */
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/***** General end ******/
+
+
+
+
+/***** footer  *****/
+#main-footer {
+  background-color: var(--red);
+}

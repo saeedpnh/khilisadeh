@@ -1,0 +1,245 @@
+@import url('fonts.css');
+@import url('general.css');
+
+
+/***** main-header *****/
+.main-header {
+  position: relative;
+  /* padding-bottom: var(--bottom-svg-ratio); */
+}
+
+.navbar {
+  font-family: "sarbaz";
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #898270;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    /* height: 110px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  .inbody {
+    height: 55px;
+  }
+}
+
+#main-navbar {
+  direction: rtl;
+}
+
+/***** main-header end *****/
+
+
+/***** About page *****/
+#about-page {
+  background-color: var(--red);
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+  height: 60vh;
+}
+
+#about-page .image-hodler {
+  height: 65vh;
+}
+
+#about-page img {
+  /* box-shadow: 0 0 5px 5px #ffffff; */
+  border: 5px solid #FEE7DD;
+  padding: 3px;
+}
+
+@media (min-width: 576px) {
+  #about-page {
+    background-color: var(--red);
+    position: relative;
+    padding-bottom: var(--bottom-svg-ratio);
+    height: 80vh;
+  }
+
+  #about-page .image-hodler {
+    height: 70vh;
+  }
+
+  #about-page img {
+    /* box-shadow: 0 0 5px 5px #ffffff; */
+    border: 5px solid #FEE7DD;
+    padding: 3px;
+  }
+
+}
+
+/***** About page end *****/
+
+
+/***** About-me *****/
+#about-me p {
+  font-family: 'sanslight';
+  color: #898270;
+  font-weight: normal;
+  line-height: 2.1;
+  direction: rtl;
+}
+
+/***** About-me end *****/
+
+
+
+/***** Circle Progress *****/
+#skills-percent {
+  margin-top: 60px;
+}
+
+#skills-percent h2 {
+  font-size: 1.3em;
+  color: #898270;
+}
+
+.circle-progress {
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.circle-progress:hover {
+  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+}
+
+.circle-progress-html .circle-progress-value {
+  stroke-width: 8px;
+  stroke: rgba(217, 68, 67, 1);
+  transition: all .2s ease;
+}
+
+.circle-progress-css .circle-progress-value {
+  stroke-width: 8px;
+  stroke: rgba(27, 154, 170, 0.5)
+}
+
+.circle-progress-js .circle-progress-value {
+  stroke-width: 8px;
+  stroke: rgba(255, 217, 125, 1)
+}
+
+.circle-progress-wp .circle-progress-value {
+  stroke-width: 8px;
+  stroke: rgba(91, 192, 235, 1)
+}
+
+.circle-progress-react .circle-progress-value {
+  stroke-width: 8px;
+  stroke: rgba(126, 178, 221, 1);
+}
+
+.circle-progress-circle {
+  stroke-width: 8px;
+  stroke: hsl(39, 100%, 85%);
+}
+
+.circle-progress-text {
+  /* fill: rgba(96, 89, 77, 1); */
+  fill: rgba(244, 162, 89, 1);
+  font-weight: bold;
+}
+
+/***** Circle Progress end *****/
+
+
+/***** extra *****/
+#extra {
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+  margin-top: 200px;
+}
+
+#extra {
+  margin-top: 60px;
+}
+
+#extra p {
+  font-family: 'sanslight';
+  color: #898270;
+  font-weight: normal;
+  line-height: 2.1;
+  direction: rtl;
+}
+
+/* progress bar */
+
+#extra .bs {
+  background-color: #e4c465;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 95%;
+}
+
+#extra .gf {
+  background-color: #36C9C6;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 50%;
+}
+
+#extra .vc {
+  background-color: #9BC1BC;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 30%;
+}
+
+#extra .vc {
+  background-color: #9BC1BC;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 30%;
+}
+
+#extra .json {
+  background-color: #EA9E8D;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 80%;
+}
+
+#extra .jquery {
+  background-color: #F1E8B8;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 60%;
+}
+
+#extra .api {
+  background-color: #68C5DB;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 40%;
+}
+
+#extra .seo {
+  background-color: #41D3BD;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: none;
+  max-width: 75%;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* progress bar end */
+
+/***** extra end *****/

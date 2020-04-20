@@ -1,0 +1,151 @@
+@import url(general.css);
+@import url(fonts.css);
+
+/***** main-header *****/
+.main-header {
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+}
+
+.navbar {
+  font-family: "sarbaz";
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #898270;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    /* height: 110px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  .inbody {
+    height: 55px;
+  }
+}
+
+#main-navbar {
+  direction: rtl;
+}
+
+/***** main-header end *****/
+
+
+/***** single-title  *****/
+#single-title {
+  background: var(--red);
+}
+
+#single-title .single__post--holder {
+  background: var(--red);
+}
+
+#single-title .single-title--main-title {
+  font-size: 3em;
+  direction: rtl;
+  text-align: right;
+  padding-right: 5px;
+}
+
+@media (max-width: 576px) {
+  #single-title .single-title--main-title {
+    font-size: 1.8em;
+  }
+
+  .single-post__content--text p {
+    text-align: justify;
+    padding: 0 5px;
+    font-size: .95em;
+  }
+}
+
+/***** single-title end  *****/
+
+
+/***** single-post  *****/
+#single-post .single-post__content {
+  font-family: sanslight;
+  text-align: right;
+  direction: rtl;
+}
+
+#single-post .single-post__content--brief {
+  background: #E9ECEF;
+  color: #999999;
+  line-height: 1.7;
+  font-size: 1em;
+  border-radius: 0 0 5px 5px;
+}
+
+#single-post .single-post__content--text {
+  color: #777777;
+  line-height: 1.9;
+  text-align: right;
+  font-size: 1em;
+}
+
+#single-post .side {
+  text-align: right;
+}
+
+#single-post .side h3 {
+  font-family: sarbaz;
+  /* color: #777777; */
+  font-size: 1.2em;
+}
+
+#single-post ul {
+  font-family: sanslight;
+  font-size: .9em;
+}
+
+#single-post ul li a {
+  text-decoration: none;
+  color: #999999;
+}
+
+@media (max-width: 576px) {
+  #single-post .side h3 {
+    font-size: 1em;
+  }
+}
+
+/***** single-post end  *****/
+
+
+/***** author  *****/
+#author {
+  background: #FFE900;
+  margin-top: 100px;
+}
+
+#author h5 {
+  font-family: sarbaz;
+}
+
+#author p {
+  font-family: sanslight;
+}
+
+/***** author end  *****/
+
+
+/***** comments  *****/
+#comments{
+  padding-top: 60px;
+  font-family: sanslight;
+  color: #999999;
+}
+#comments header h3{
+  font-family: sarbaz;
+  color: #999999;
+}
+
+#comments form input[type='text'] {
+  direction: rtl;
+}
+
+/***** comments end  *****/

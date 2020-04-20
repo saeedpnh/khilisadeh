@@ -1,0 +1,111 @@
+@import url('fonts.css');
+@import url('general.css');
+
+
+/***** main-header *****/
+.main-header {
+  position: relative;
+  /* padding-bottom: var(--bottom-svg-ratio); */
+}
+
+.navbar {
+  font-family: "sarbaz";
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #898270;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    /* height: 110px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  .inbody {
+    height: 55px;
+  }
+}
+
+#main-navbar {
+  direction: rtl;
+}
+
+/***** main-header end *****/
+
+
+
+/***** blog page *****/
+#blog-page {
+  background-color: var(--red);
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+  height: 30vh;
+}
+
+#blog-page .text-hodler {
+  height: 33vh;
+}
+
+@media (min-width: 576px) {
+  #blog-page {
+    background-color: var(--red);
+    position: relative;
+    padding-bottom: var(--bottom-svg-ratio);
+    height: 60vh;
+  }
+
+  #blog-page .text-hodler {
+    height: 40vh;
+  }
+
+}
+
+/***** blog page end *****/
+
+
+/******* blog ********/
+
+#blog .blog-box {
+  box-shadow: 0 10px 30px rgba(55, 43, 125, 0.1);
+  border-radius: 25px;
+  position: relative;
+
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+}
+
+#blog .blog-box:hover {
+  box-shadow: 0 2px 5px rgba(60, 43, 125, 0.4);
+}
+
+#blog .blog-box .read-more {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#blog .blog-box a {
+  text-decoration: none;
+}
+
+#blog .blog-box p {
+  font-family: 'sanslight';
+  color: #888888;
+  direction: rtl;
+  font-size: .9em;
+  line-height: 2;
+  padding:0 3px 50px 3px;
+}
+
+#blog img {
+  /* height: 300px; */
+  border-radius: 25px 25px 0 0;
+}
+
+/****** blog end *******/
