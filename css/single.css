@@ -72,6 +72,14 @@
   direction: rtl;
 }
 
+#single-post .single-post__meta{
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  color: #999999;
+  font-size: .8em;
+  padding: 5px 0;
+  direction: rtl;
+}
+
 #single-post .single-post__content--brief {
   background: #E9ECEF;
   color: #999999;
