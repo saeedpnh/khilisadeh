@@ -1,20 +1,6 @@
+// import { navbar } from './navbar.js';
+
 $(function () {
-
-  checkHeaderStatus()
-  window.scroll(function () {
-    checkHeaderStatus()
-  })
-
-  function checkHeaderStatus() {
-    $(window).on('activate.bs.scrollspy', function () {
-      let hash = $('.main-nav').find('a.active').attr('href');
-      if (hash !== '#top-header') {
-        $('header nav').addClass('inbody');
-      } else {
-        $('header nav').removeClass('inbody');
-      }
-    })
-  }
 
   // hide collapse nav on click
   $('.navbar-nav > li > a').on('click', function () {
@@ -31,7 +17,6 @@ $(function () {
   })
   wow.init();
 
-
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $(document).on("click", "a.js-scroll-trigger", function (e) {
     var anchor = $(this);
@@ -47,4 +32,6 @@ $(function () {
     e.preventDefault();
   });
 
+
 })
+
