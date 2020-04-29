@@ -1,0 +1,31 @@
+/***** main-header *****/
+.main-header {
+  position: relative;
+  padding-bottom: var(--bottom-svg-ratio);
+}
+
+.navbar {
+  font-family: "sarbaz";
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #898270;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    /* height: 110px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  .inbody {
+    height: 55px;
+  }
+}
+
+#main-navbar {
+  direction: rtl;
+}
+
+/***** main-header end *****/
