@@ -1,14 +1,10 @@
-@import url('fonts.css');
-@import url('general.css');
-@import url('navbar.css');
-
+@import url("fonts.css");
+@import url("general.css");
+@import url("navbar.css");
 
 /***** main-header *****/
 
-
 /***** main-header end *****/
-
-
 
 /***** banner *****/
 .banner-image {
@@ -47,7 +43,7 @@
 
 #about .btn-more {
   color: #898270;
-  background-color: #FEE7DD;
+  background-color: #fee7dd;
 }
 
 /***** About end *****/
@@ -127,7 +123,7 @@
   background: url(../img/box.svg) no-repeat center center;
   background-size: cover;
   border-radius: 25px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -137,7 +133,7 @@
 }
 
 #latest-post .box img {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #latest-post .box:hover {
